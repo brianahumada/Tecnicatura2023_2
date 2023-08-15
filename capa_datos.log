@@ -1,0 +1,36 @@
+07:19:30 PM:DEBUG [Persona.py:55] 
+            id Persona: 1,
+            Nombre: Juan,
+            Apellido: Perez,
+            Email: Jperez@gamial.com
+        
+07:19:30 PM:DEBUG [Persona.py:57] 
+            id Persona: None,
+            Nombre: Jose,
+            Apellido: Lopez,
+            Email: JoseLopez@gmail.com
+        
+07:19:30 PM:DEBUG [Persona.py:59] 
+            id Persona: 1,
+            Nombre: None,
+            Apellido: None,
+            Email: None
+        
+07:29:07 PM:DEBUG [Persona.py:55] 
+            id Persona: 1,
+            Nombre: Juan,
+            Apellido: Perez,
+            Email: Jperez@gamial.com
+        
+07:29:07 PM:DEBUG [Persona.py:57] 
+            id Persona: None,
+            Nombre: Jose,
+            Apellido: Lopez,
+            Email: JoseLopez@gmail.com
+        
+07:29:07 PM:DEBUG [Persona.py:59] 
+            id Persona: 1,
+            Nombre: None,
+            Apellido: None,
+            Email: None
+        
