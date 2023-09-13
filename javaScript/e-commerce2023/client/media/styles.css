@@ -93,3 +93,69 @@
     margin-bottom: 20px;
     text-align: center;
 }
+/*Modal-body*/
+.modal-body{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.product{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.product-img{
+    height: 80px;
+    margin-right: 20px;
+    width: 80px;
+}
+
+.product-info{
+    flex: 1;
+    text-align: left;
+}
+
+.product-info h4{
+    margin-top: 38px;
+}
+
+.quantity-btn-decrese,
+.quantity-btn-increse{
+    color: #333333;
+    cursor: pointer;
+    font-size: 16px;
+    width: 28px;
+    font-weight: bold;
+}
+
+/*Media query*/
+@media only screen and(max-width: 500px){
+    .product-img{
+        display: none;
+    }
+    .modal-body{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
+.price{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.delete-product{
+    margin-top: 20px;
+    margin-left: 2em;
+    cursor: pointer;
+}
+
+.total-price{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10p;
+}

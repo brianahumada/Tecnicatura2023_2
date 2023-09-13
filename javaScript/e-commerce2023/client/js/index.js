@@ -13,21 +13,32 @@ productos.forEach((product) =>{
 
     //Generamos un boton para cada producto
     const buyButton = document.createElement("button");
-    buyButton.innerText = "Comprar";// le ponemos un texto al boton
+    buyButton.innerText = "Comprar";
 
     //lo aderimos al content donde tenemos el div
     content.append(buyButton);
 
-    //evento addEventListener
+    //evento addEventListener 
     buyButton.addEventListener("click", () =>{
-        cart.push({
-            id: product.id,
-            product: product.productName,
-            price: product.price,
-            quanty: product.quanty,
-            img: product.img,
-        })
-        console.log(cart)
-    })
+        //variable para saber si el producto esta en el carrito
+        const repeat = cart.some((repeatProduct) => repeatProduct.id === product.id); // devuelve tru o false
+
+        if (repeat){
+            //recorer el carrito y dectectar el producto con el mismo id
+            cart.map((prod)=>{
+                if(prod.id === product.id){
+                    prod.quanty++; //sumamos uno al quanty si ya se encontro el mismo producto
+                }
+            })
+        }else{
+            cart.push({
+                id: product.id,
+                product: product.productName,
+                price: product.price,
+                quanty: product.quanty,
+                img: product.img,
+            });
+        }
+    });
 
 });
