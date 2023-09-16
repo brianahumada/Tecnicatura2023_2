@@ -19,7 +19,7 @@ import lombok.ToString;
 public class Estudiante {
     @Id //agrega el orden de la llave primaria
     @GeneratedValue(strategy = GenerationType.IDENTITY) //para llaves autoincrementable
-    private Integer idEStudiante;
+    private Integer idestudiante;
     private String nombre;
     private String apellido;
     private String telefono;
