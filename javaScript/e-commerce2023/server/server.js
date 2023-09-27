@@ -15,7 +15,7 @@ app.use(express.urlencoded({ extended: false }));//uso de middleware para analiz
 app.use(express.json());//analizar solicitudes entrantes con carga útiles archivos json
 //app.use(express.static("../../client/html-js"));//redirigiendo a archivos estaticos
 //cambiando
-app.use(express.static(path.join(__dirname,"../client/media/index.html")));
+app.use(express.static(path.join(__dirname,"../client/index.html")));
 
 app.use(cors());//permitir el intercambio de recursos entre origenes cors
 //inicializa una primera ruta
